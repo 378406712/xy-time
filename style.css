@@ -37,8 +37,8 @@ body {
   padding: 0;
   background: linear-gradient(
     -1deg,
-    #4158a2 10%,
-    #c850bc 46%,
+    #67df27 20%,
+    #0d7be2 46%,
     #ffcc70 100%
   ); /*设置渐变的方向从左到右 颜色从ff0000到ffff00*/
   -webkit-background-clip: text; /*将设置的背景颜色限制在文字中*/
@@ -136,5 +136,84 @@ body {
     transform: translate(20px, 120px) rotateX(-180deg) rotateY(-90deg)
       scale(0.5);
     opacity: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: girl;
+}
+
+@font-face {
+  font-family: 'girl';
+  src: url('./华康少女体.ttf');
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+#particles-js {
+  position: relative;
+  height: 100vh;
+  background-color: #fff;
+  mix-blend-mode: screen;
+}
+
+.date {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 50%;
+  z-index: 9;
+  font-size: 18px;
+  color: #fefefe;
+  text-shadow: 0 0 0.5em #36aeee, 0 0 0.2em rgb(0, 119, 255);
+}
+.mayday {
+  text-align: center;
+  font-size: 36px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 9;
+  color: #fefefe;
+  text-shadow: 0 0 0.5em #36aeee, 0 0 0.2em rgb(0, 119, 255);
+  animation: blink 3s ease infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: .9;
+  }
+  80% {
+    opacity: .8;
+  }
+  70% {
+    opacity: .7;
+  }
+  60% {
+    opacity: .6;
+  }
+  50% {
+    opacity: .5;
+  }
+  40% {
+    opacity:.4;
+  }
+  30% {
+    opacity: .3;
+  }
+ 20% {
+    opacity: .2;
+  }
+  10% {
+    opacity: .1;
   }
 }
